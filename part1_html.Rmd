@@ -59,6 +59,6 @@ cookie %>%
 
 ## CV Link
 
-Click `r if (knitr::is_html_output()) '[HERE](cvdz.pdf)' else '\\href{cvdz.pdf}{HERE}'` to view my CV.
+Click `r if (knitr::is_html_output()) '[HERE](cvDZ.pdf)' else '\\href{cvDZ.pdf}{HERE}'` to view my CV.
 
 <!-- I can use the same way to insert the CV like in the beamer file, but try a new way. -->
