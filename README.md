@@ -6,7 +6,7 @@ This repo is for STAT850 Homework 10: Professional Communication.
 
 Here is my slides: 
 - [Beamer/LaTeX](https://github.com/Dada-Z/stat-slide-cv.github.io/blob/main/part1_beamer.pdf)
-- [HTML-based (reveal.js)](https://github.com/Dada-Z/stat-slide-cv.github.io/blob/main/part1_html.html)
+- [HTML-based (reveal.js)](https://dada-z.github.io/stat-slide-cv.github.io/part1_html.html#/)
 
 Here is my [CV](https://github.com/Dada-Z/stat-slide-cv.github.io/blob/main/cvDZ.pdf). 
 
