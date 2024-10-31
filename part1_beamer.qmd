@@ -1,0 +1,67 @@
+---
+title: "Introduce Myself"
+author: "Dada Zhang"
+date: "`r Sys.Date()`"
+format:
+  beamer:
+    theme: "AnnArbor"
+    colortheme: "dolphin"
+    fonttheme: "structurebold"
+editor: visual
+---
+
+## Introduction
+
+\textcolor{blue}{Hello!}
+
+My name is **Dada Zhang**, and my birthday is July 23. I grew up in a small town called Yitong in northeast China. After finishing high school, I began university studies in Huanghua City in Hebei Province. I initially majored in Civil Engineering, and after my first year, I became an exchange student and studied Construction Management and Mathematics at Northern Arizona University in Flagstaff, Arizona. Upon completing my bachelor's degrees, I pursued master's degrees in Statistics and Civil Engineering, finishing my dissertation in 2021. In 2022, I began my Ph.D. in Construction Engineering and Management at the University of Nebraska-Lincoln.
+
+Having spent many years in academia, I often get asked, **"When do you graduate?"** I expect to complete my Ph.D. in 2026 and would like to work in academia after graduation.
+
+## Favorite Animal
+
+This is my favorite animal (Figure \ref{fig:panda}) — the Panda. Her name is Huahua, and she is the top star in pandas!
+
+```{=tex}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.35\textwidth]{./panda_huahua.jpg}
+  \caption{Huahua panda.}
+  \label{fig:panda}
+\end{figure}
+```
+## Favorite Plot
+
+I created different plots in the class, and here is my favorite plot that I generated before. I loved this because it was a nice visualization.
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, fig.width = 6, fig.height = 3}
+library(tidyverse)
+library(ggplot2)
+# Week 05: Cookies dataset
+cookie <- read.csv("./choc_chip_cookie_ingredients.csv")
+recipe_count <- n_distinct(cookie$Recipe_Index)
+# Q4. Which ingredients are most frequently used in the cookie dataset? 
+## using bar chart
+cookie %>% 
+  group_by(Ingredient) %>%
+  summarise(uniq_recipe_cnt = n_distinct(Recipe_Index)) %>%
+  mutate(proportion = uniq_recipe_cnt / recipe_count) %>%
+  arrange(desc(proportion)) %>%
+  head(20) %>%
+  # plot data
+  # adjust x-axis: show in descendig order
+  ggplot(aes(x = reorder(Ingredient, -uniq_recipe_cnt), y = uniq_recipe_cnt)) +
+  geom_col(fill = "skyblue3") +
+  labs(title = "The most common 20 Ingredients in Cookie Recipes (Week 5 Cookie Dataset)",
+       x = "Ingredient",
+       y = "Number of Recipes") +
+  theme(plot.title = element_text(size = 10),
+        axis.title.y = element_text(size = 10),
+        axis.text.y = element_text(size = 10),
+        axis.title.x = element_text(size = 10),
+        axis.text.x = element_text(angle = 45, hjust = 1, size = 8))
+```
+
+## CV Link
+
+Click it to view my CV. [HERE](cvDZ.pdf).
