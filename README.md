@@ -8,7 +8,7 @@ Here is my slides:
 - [Beamer/LaTeX](https://dada-z.github.io/stat-slide-cv.github.io/part1_beamer.pdf)
 - [HTML-based (reveal.js)](https://dada-z.github.io/stat-slide-cv.github.io/part1_html.html#/)
 
-Here is my [CV](https://github.com/Dada-Z/stat-slide-cv.github.io/blob/main/cvDZ.pdf). 
+Here is my [CV](https://dada-z.github.io/stat-slide-cv.github.io/cvDZ.pdf). 
 
 - The bib does not work when compile pdf using cvDZ.tex file. To solve this issue, execute the following commands in Terminal: 
 
