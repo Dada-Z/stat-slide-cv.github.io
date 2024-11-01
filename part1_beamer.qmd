@@ -64,4 +64,6 @@ cookie %>%
 
 ## CV Link
 
-Click it to view my CV. [HERE](cvDZ.pdf). <!-- Click `r if (knitr::is_html_output()) '[HERE](cvDZ.pdf)' else '\\href{cvDZ.pdf}{HERE}'` to view my CV. --> <!-- The above may cause permission error --> <!-- uh... compile PDF file first, then Render it to avoid permission issue. --> <!-- Both ways are good to link cv -->
+<!-- Click it to view my CV. [HERE](cvDZ.pdf).  -->
+
+Click `r if (knitr::is_html_output()) '[HERE](cvDZ.pdf)' else '\\href{https://dada-z.github.io/stat-slide-cv.github.io/cvDZ.pdf}{HERE}'` to view my CV.
